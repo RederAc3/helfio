@@ -13,7 +13,7 @@ const RiskMeter: React.FC<RiskMeterProps> = ({ title, value }) => {
                 <Text style={styles.textMore}>Learn more</Text>
             </View>
         </View>
-    )
-}
+    );
+};
 
 export default RiskMeter;
