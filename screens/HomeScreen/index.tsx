@@ -1,14 +1,25 @@
+import { View, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { SafeAreaView, ScrollView } from 'react-native';
+
+import RiskMeter from '../../components/RiskMeter';
 
 import styles from './HomeScreen.styles';
 
 const HomeScreen = () => {
     return (
-        <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
+        <SafeAreaView style={styles.container}>
             <StatusBar style="auto" />
-        </View>
+            <ScrollView style={styles.scrollView}>
+                <View style={styles.mainData}>
+                    <Image style={styles.person} resizeMode={'contain'} source={require("../..//assets/person.png")} />
+                </View>
+                <View style={styles.riskMeters}>
+                    <RiskMeter title="Risk of developing diabetes over 10 years" value={"Low"} />
+                    <RiskMeter title="Cardiovascular risk" value={"Low"} />
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 

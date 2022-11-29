@@ -3,3 +3,8 @@ export type TabBarItemProps = {
     image: Image,
     focused: boolean,
 }
+
+export type RiskMeterProps = {
+    title: string,
+    value: string
+}

@@ -1,4 +1,5 @@
 import { View, Text, Image } from "react-native";
+
 import styles from "./TabBarItem.styles"
 import { TabBarItemProps } from "../../types";
 
