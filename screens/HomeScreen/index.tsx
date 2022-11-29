@@ -17,10 +17,37 @@ const HomeScreen: React.FC = () => {
                 <View style={styles.mainData}>
                     <Image
                         style={styles.person}
-                        resizeMode={'contain'}
+                        resizeMode={"contain"}
                         source={require("../../assets/person.png")}
                     />
-                    <RoundMeter />
+                    
+                    <View>
+                        <RoundMeter
+                            primary={"#8FBD12"}
+                            secondary={"#E6EFCF"}
+                            title={"BMI"}
+                            value={23}
+                            pieElements={5}
+                            min={16}
+                            max={40}
+                            badgeType={"success"}
+                            badgeValue={"Normal"}
+                        />
+
+                        <RoundMeter
+                            primary={"#FDA901"}
+                            secondary={"#F2EFDC"}
+                            title={"WHR"}
+                            value={0.96}
+                            isDecimals={true}
+                            pieElements={3}
+                            min={0}
+                            max={1.5}
+                            badgeType={"warning"}
+                            badgeValue={"Average"}
+                        />
+
+                    </View>
                 </View>
                 <View style={styles.riskMeters}>
                     <RiskMeter

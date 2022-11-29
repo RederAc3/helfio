@@ -16,7 +16,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginLeft: 15,
-        marginRight: 15
+        marginRight: 15,
     },
     person: {
         height: 392,
