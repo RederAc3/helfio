@@ -2,9 +2,9 @@ import { View, Text } from 'react-native';
 
 import styles from "./RiskMeter.styles";
 
-import { RiskMeterProps } from "../../types";
+import { IRiskMeterProps } from "../../types";
 
-const RiskMeter: React.FC<RiskMeterProps> = ({ title, value }) => {
+const RiskMeter: React.FC<IRiskMeterProps> = ({ title, value }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{title}</Text>

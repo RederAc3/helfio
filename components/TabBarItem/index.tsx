@@ -1,9 +1,9 @@
 import { View, Text, Image } from "react-native";
 
 import styles from "./TabBarItem.styles"
-import { TabBarItemProps } from "../../types";
+import { ITabBarItemProps } from "../../types";
 
-const TabBarItem: React.FC<TabBarItemProps> = ({ title, image, focused }) => {
+const TabBarItem: React.FC<ITabBarItemProps> = ({ title, image, focused }) => {
     return (
         <View style={styles.containerTabBarItem}>
             <Image

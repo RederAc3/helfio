@@ -20,7 +20,7 @@ const HomeScreen: React.FC = () => {
                         resizeMode={"contain"}
                         source={require("../../assets/person.png")}
                     />
-                    
+
                     <View>
                         <RoundMeter
                             primary={"#8FBD12"}

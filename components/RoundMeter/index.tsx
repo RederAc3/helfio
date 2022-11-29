@@ -2,10 +2,10 @@ import { View, Text } from "react-native";
 import { VictoryPie } from "victory-native";
 
 import { printProgress } from "../../functions";
-import { RoundMeterProps, PieArrayElements } from "../../types";
+import { IRoundMeterProps, IPieArrayElements } from "../../types";
 import styles from "./RoundMeter.styles";
 
-const RoundMeter: React.FC<RoundMeterProps> = ({
+const RoundMeter: React.FC<IRoundMeterProps> = ({
     title,
     value,
     pieElements,
@@ -18,7 +18,7 @@ const RoundMeter: React.FC<RoundMeterProps> = ({
     badgeValue
 }) => {
 
-    let pieArray: Array<PieArrayElements> = [];
+    let pieArray: Array<IPieArrayElements> = [];
     let pieColors: Array<string> = [];
 
     for (let i = 0; i < pieElements; i++) {

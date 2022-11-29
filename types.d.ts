@@ -1,20 +1,20 @@
-export type TabBarItemProps = {
+export interface ITabBarItemProps {
     title: string,
     image: Image,
     focused: boolean,
 }
 
-export type RiskMeterProps = {
+export interface IRiskMeterProps {
     title: string,
     value: string
 }
 
-export type PieArrayElements = {
+export interface IPieArrayElements {
     x: string,
     y: number
 }
 
-export type RoundMeterProps = {
+export interface IRoundMeterProps {
     title: string,
     value: number,
     primary: string,
