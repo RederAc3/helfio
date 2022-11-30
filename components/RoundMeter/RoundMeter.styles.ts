@@ -19,16 +19,5 @@ export default StyleSheet.create({
     titleMeter: {
         fontSize: 20,
         marginBottom: 10 
-    },
-
-    badgeMeter: {
-        padding: 5,
-        paddingLeft: 20,
-        paddingRight: 20,
-        borderRadius: 16
-    },
-    titleBadgeMeter: {
-        fontSize: 18,
-        color: "#8FBD12"
     }
 })

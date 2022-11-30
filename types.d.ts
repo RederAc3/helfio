@@ -26,3 +26,19 @@ export interface IRoundMeterProps {
     badgeValue: string
     pieElements: number
 }
+
+export interface IBadgeProps {
+    value: string,
+    type?: string
+}
+
+export interface IBadgeTypeValue {
+    bg: string,
+    text: string
+}
+
+export interface IBadgeTypes {
+    warning: IBadgeTypeValue,
+    success: IBadgeTypeValue,
+    info: IBadgeTypeValue
+}

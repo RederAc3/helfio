@@ -20,13 +20,13 @@ export default StyleSheet.create({
         fontSize: 18,
         lineHeight: 26
     },
-    statusRisk: {
-        color: "#B7B232",
-        lineHeight: 21.17,
-        fontSize: 18,
-        fontWeight: "bold",
-        padding: 5
-    },
+    // statusRisk: {
+    //     color: "#B7B232",
+    //     lineHeight: 21.17,
+    //     fontSize: 18,
+    //     fontWeight: "bold",
+    //     padding: 5
+    // },
     buttonMore: {
         backgroundColor: "#F6F6F6",
         alignSelf: 'stretch',

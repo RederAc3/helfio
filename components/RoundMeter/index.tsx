@@ -1,6 +1,8 @@
 import { View, Text } from "react-native";
 import { VictoryPie } from "victory-native";
 
+import Badge from "../Badge";
+
 import { printProgress } from "../../functions";
 import { IRoundMeterProps, IPieArrayElements } from "../../types";
 import styles from "./RoundMeter.styles";
@@ -32,16 +34,7 @@ const RoundMeter: React.FC<IRoundMeterProps> = ({
             <View style={styles.descMeterWrapper}>
                 <Text style={styles.valueMeter}>{value}</Text>
                 <Text style={styles.titleMeter}>{title}</Text>
-
-                <View style={{
-                    ...styles.badgeMeter,
-                    backgroundColor: badgeType === "success" ? "#EEF3DF" : badgeType === "warning" ? "#FFF0D2" : "#FFF",
-                }}>
-                    <Text style={{
-                        ...styles.titleBadgeMeter,
-                        color: badgeType === "success" ? "#8FBD12" : badgeType === "warning" ? "#FDA901" : "#000",
-                    }}>{badgeValue}</Text>
-                </View>
+                <Badge type={badgeType} value={badgeValue}/>
             </View>
             <VictoryPie
                 colorScale={pieColors.reverse()}
